@@ -1,0 +1,150 @@
+/* Ogólny styl strony */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecdecc; /* Jasny beżowy kolor */
+}
+
+/* Nagłówek */
+.main-header {
+    text-align: center;
+    background-color: #f8e1e1; /* Pastelowy różowy */
+    padding: 15px;
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+    border-bottom: 2px solid #f8e1e1;
+}
+
+/* Główny kontener */
+.container {
+    display: flex; /* Układ poziomy */
+    flex-direction: row; /* Kolumny obok siebie */
+    gap: 20px; /* Odstęp między kolumnami */
+    max-width: 1800px; /* Maksymalna szerokość */
+    margin: 35px auto; /* Wyśrodkowanie */
+    background-color: #ecdecc;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 800px;
+}
+
+/* Lewa kolumna */
+.left-column {
+    width: 35%; /* Szerokość lewego panelu */
+    padding-right: 20px;
+    border-right: 2px solid #000000; /* Linia oddzielająca kolumny */
+    box-sizing: border-box;
+}
+
+/* Prawa kolumna */
+.right-column {
+    width: 65%; /* Szerokość prawego panelu */
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+/* Nagłówki sekcji */
+h2 {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000000; /* Podkreślenie */
+    padding-bottom: 5px;
+}
+
+/* Styl akapitów i list */
+p, ul {
+    font-size: 16px;
+    line-height: 1.6; /* Poprawiona czytelność */
+    color: #333;
+    margin: 0 0 15px 0;
+}
+
+/* Listy umiejętności i języków */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li, .languages li {
+    background-color: #f8e1e1; /* Neutralne tło */
+    color: black;
+    padding: 5px 15px;
+    margin: 5px 0;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Dostosowanie dla urządzeń mobilnych */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Kolumny jedna pod drugą */
+        gap: 10px;
+    }
+
+    .left-column, .right-column {
+        width: 100%; /* Szerokość na pełną stronę */
+        padding: 0;
+        border: none; /* Usuń linię oddzielającą */
+    }
+
+    .left-column {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Ustawienie elementów na lewej stronie */
+        padding-left: 30px; /* Przesunięcie całej kolumny w prawo */
+    }
+}
+
+/* Zdjęcie profilowe */
+.photo-container {
+    text-align: left; /* Wyrównanie zdjęcia w prawo w kontenerze */
+    padding-left: 60px; /* Przesunięcie całego kontenera */
+}
+
+.photo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 3px solid #ddcdcd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 30px; /* Przesunięcie zdjęcia w prawo */
+}
+
+/* Ogólny styl dla elementów doświadczenia zawodowego */
+.experience-item {
+    margin-bottom: 20px; /* Standardowy odstęp */
+}
+
+/* Styl dla tytułu stanowiska */
+.experience-item strong {
+    font-weight: bold; /* Wyróżnienie tytułu */
+    display: block; /* Tytuł jako blok */
+    margin-bottom: 10px; /* Przerwa pod tytułem */
+}
+
+/* Styl dla opisów obowiązków */
+.experience-item p {
+    margin: 5px 0; /* Małe odstępy między paragrafami */
+    font-size: 16px; /* Dopasowanie czcionki */
+    line-height: 1.6; /* Lepsza czytelność */
+}
+
+/* Większa przerwa po całej sekcji Seachange */
+.seachange {
+    margin-bottom: 40px; /* Większa przestrzeń po całej sekcji Seachange */
+}
+
+/* Większa przerwa między tytułem stanowiska a jego opisem */
+.seachange p {
+    margin-top: 10px; /* Można dostosować wartość do swoich preferencji */
+}
+
+/* Zwiększenie przestrzeni po ostatnim elemencie w IQVIA */
+.iqvia p:last-of-type {
+    margin-bottom: 40px; /* Zwiększenie odstępu po ostatnim punkcie w IQVIA */
+}

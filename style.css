@@ -3,13 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ecdecc; /* Jasny beżowy kolor */
+    background-color: #ecdecc; 
 }
 
 /* Nagłówek */
 .main-header {
     text-align: center;
-    background-color: #f8e1e1; /* Pastelowy różowy */
+    background-color: #f8e1e1; 
     padding: 15px;
     margin: 0;
     font-size: 36px;
@@ -19,11 +19,11 @@ body {
 
 /* Główny kontener */
 .container {
-    display: flex; /* Układ poziomy */
-    flex-direction: row; /* Kolumny obok siebie */
-    gap: 20px; /* Odstęp między kolumnami */
-    max-width: 1800px; /* Maksymalna szerokość */
-    margin: 35px auto; /* Wyśrodkowanie */
+    display: flex; 
+    flex-direction: row; 
+    gap: 20px; 
+    max-width: 1800px; 
+    margin: 35px auto;
     background-color: #ecdecc;
     padding: 20px;
     box-sizing: border-box;
@@ -32,15 +32,15 @@ body {
 
 /* Lewa kolumna */
 .left-column {
-    width: 35%; /* Szerokość lewego panelu */
+    width: 35%; 
     padding-right: 20px;
-    border-right: 2px solid #000000; /* Linia oddzielająca kolumny */
+    border-right: 2px solid #000000;
     box-sizing: border-box;
 }
 
 /* Prawa kolumna */
 .right-column {
-    width: 65%; /* Szerokość prawego panelu */
+    width: 65%; 
     padding-left: 20px;
     box-sizing: border-box;
 }
@@ -50,14 +50,14 @@ h2 {
     font-size: 22px;
     color: #444;
     margin-bottom: 10px;
-    border-bottom: 2px solid #000000; /* Podkreślenie */
+    border-bottom: 2px solid #000000; 
     padding-bottom: 5px;
 }
 
 /* Styl akapitów i list */
 p, ul {
     font-size: 16px;
-    line-height: 1.6; /* Poprawiona czytelność */
+    line-height: 1.6; 
     color: #333;
     margin: 0 0 15px 0;
 }
@@ -69,7 +69,7 @@ ul {
 }
 
 .skills li, .languages li {
-    background-color: #f8e1e1; /* Neutralne tło */
+    background-color: #f8e1e1; 
     color: black;
     padding: 5px 15px;
     margin: 5px 0;
@@ -80,28 +80,28 @@ ul {
 /* Dostosowanie dla urządzeń mobilnych */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Kolumny jedna pod drugą */
+        flex-direction: column; 
         gap: 10px;
     }
 
     .left-column, .right-column {
-        width: 100%; /* Szerokość na pełną stronę */
+        width: 100%; 
         padding: 0;
-        border: none; /* Usuń linię oddzielającą */
+        border: none; 
     }
 
     .left-column {
         display: flex;
         flex-direction: column;
-        align-items: flex-start; /* Ustawienie elementów na lewej stronie */
-        padding-left: 30px; /* Przesunięcie całej kolumny w prawo */
+        align-items: flex-start; 
+        padding-left: 30px; 
     }
 }
 
 /* Zdjęcie profilowe */
 .photo-container {
-    text-align: left; /* Wyrównanie zdjęcia w prawo w kontenerze */
-    padding-left: 60px; /* Przesunięcie całego kontenera */
+    text-align: left; 
+    padding-left: 60px; 
 }
 
 .photo {
@@ -112,39 +112,39 @@ ul {
     border: 3px solid #ddcdcd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-    left: 30px; /* Przesunięcie zdjęcia w prawo */
+    left: 30px; 
 }
 
 /* Ogólny styl dla elementów doświadczenia zawodowego */
 .experience-item {
-    margin-bottom: 20px; /* Standardowy odstęp */
+    margin-bottom: 20px; 
 }
 
 /* Styl dla tytułu stanowiska */
 .experience-item strong {
-    font-weight: bold; /* Wyróżnienie tytułu */
-    display: block; /* Tytuł jako blok */
-    margin-bottom: 10px; /* Przerwa pod tytułem */
+    font-weight: bold; 
+    display: block; 
+    margin-bottom: 10px; 
 }
 
 /* Styl dla opisów obowiązków */
 .experience-item p {
-    margin: 5px 0; /* Małe odstępy między paragrafami */
-    font-size: 16px; /* Dopasowanie czcionki */
-    line-height: 1.6; /* Lepsza czytelność */
+    margin: 5px 0; 
+    font-size: 16px; 
+    line-height: 1.6;
 }
 
 /* Większa przerwa po całej sekcji Seachange */
 .seachange {
-    margin-bottom: 40px; /* Większa przestrzeń po całej sekcji Seachange */
+    margin-bottom: 40px; 
 }
 
-/* Większa przerwa między tytułem stanowiska a jego opisem */
+/* Większa przerwa między tytułem stanowiska a opisem */
 .seachange p {
-    margin-top: 10px; /* Można dostosować wartość do swoich preferencji */
+    margin-top: 10px;
 }
 
 /* Zwiększenie przestrzeni po ostatnim elemencie w IQVIA */
 .iqvia p:last-of-type {
-    margin-bottom: 40px; /* Zwiększenie odstępu po ostatnim punkcie w IQVIA */
+    margin-bottom: 40px; 
 }
